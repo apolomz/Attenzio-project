@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  attenziofrontend:
+    image: attenziofrontend
+    build:
+      context: frontend/src
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
